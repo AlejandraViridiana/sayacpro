@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+  
+ 
+<center>
+<table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">topicArticle </th>
+            <th scope="col">titleArticle</th>
+            <th scope="col">pagesArticle </th>
+            <th scope="col">datos  </th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for instance in object_list %}
+                <tr>
+                    <th scope="row"> <a href="{{instance.id}}/">{{instance.id}} </a>  </th>
+                    <td>{{instance.topicArticle}} </td>
+                    <td>{{instance.titleArticle}}</td>
+                    <td>{{instance.pagesArticle}}</td>
+                 </tr>
+            {% endfor %}
+          
+        </tbody>
+      </table>
+</center> 
+{% endblock %}
