@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+<center>
+    <h2> DELETE ACADEMY </h2>
+
+    <form action="." method="POST">{% csrf_token %}
+    <h3> ¿ Quieres eliminar del sistema al usuario de nombre: " {{ object.nameUser }} " ? </h1>
+    <p> <input type="submit" value="Yes"/> <a href="../index"> Cancel </a> </p>
+    </form>
+     
+
+</center>
+{% endblock %}

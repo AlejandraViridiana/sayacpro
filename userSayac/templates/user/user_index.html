@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+<center>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Matrícula</th>
+        <th scope="col">Nombre</th> 
+        <th scope="col">Programa educativo</th> 
+        <th scope="col">Cuerpo académico </th>
+        <th scope="col">Estatus</th> 
+        <th scope="col">Correo UABC </th> 
+        <th scope="col">Rol UABC</th> 
+      </tr>
+    </thead>
+    <tbody>
+        {% for instance in object_list %}
+            <tr>
+                <th scope="row"> <a href="{{instance.id}}/">{{instance.id}}</a>  </th>
+                <td>{{instance.numberUser}}</td>
+                <td>{{instance.nameUser}}</td>
+                <td>{{instance.programUser}}</td>
+                <td>{{instance.academyUser}}</td>
+                <td>{{instance.estatusUser}}</td>
+                <td>{{instance.emailUser}}</td>
+                <td>{{instance.rolUser}}</td>
+             </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</center>
+{% endblock %}

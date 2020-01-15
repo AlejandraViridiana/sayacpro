@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %} 
+<h2>detalles de academia</h2>
+    <center>
+        <h2>detalles del programa educativo </h2>
+
+        <br>{{object.id}}
+        <br> 
+      Nombre del programa educativo: {{object.nameProgram}} <br>
+      Clave de programa educativo: {{object.numberProgram}} <br>
+      Responsable en un total de : {{object.respProgram}}  proyectos. <br>
+      Participó en un total de :   {{object.partProgram}} proyectos.<br>
+      Fecha de adición al sistema: {{object.createdPubProgram}} <br>
+        </center>  
+{% endblock %}

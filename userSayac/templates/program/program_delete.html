@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+<center>
+    <h2> DELETE program </h2>
+
+    <form action="." method="POST">{% csrf_token %}
+    <h3> ¿ Quieres eliminar del sistema el programa de nombre: " {{ object.nameProgram }} " ? </h1>
+    <p> <input type="submit" value="Yes"/> <a href="../index"> Cancel </a> </p>
+    </form>
+     
+
+</center>
+{% endblock %}
