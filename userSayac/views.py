@@ -3,7 +3,6 @@ from django.urls import reverse
 from .forms_academy import AcademyModelForm
 from .forms_programs import ProgramModelForm
 from .forms_user import UserModelForm
-
 from .models import Academy,Program,User
 from django.views.generic import (CreateView, DetailView, ListView, UpdateView, DeleteView)
 
@@ -11,7 +10,7 @@ from django.views.generic import (CreateView, DetailView, ListView, UpdateView, 
 class AcademyIndexView(ListView): 
     template_name = 'academy/academy_index.html'
     queryset = Academy.objects.all()
-############################################################
+################################################ 
 class AcademyCreateView(CreateView): 
     template_name = 'academy/academy_create.html'
     form_class = AcademyModelForm
@@ -48,8 +47,6 @@ class AcademyDeleteView(DeleteView):
 
     def get_success_url(self): 
         return reverse('userSayac:academy-index')
-
-
 
 
 class ProgramIndexView(ListView): 
@@ -92,8 +89,6 @@ class ProgramDeleteView(DeleteView):
 
     def get_success_url(self): 
         return reverse('userSayac:program-index')
-
-
 
 
 class UserIndexView(ListView): 
