@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+<center>
+    <h2> DELETE Article </h2>
+
+    <form action="." method="POST">{% csrf_token %}
+    <h3> ¿ Quieres eliminar del sistema el Article de nombre: {{object.titleArticle}}  del autor  {{object.userArticle.nameUser}} ? </h1>
+    <p> <input type="submit" value="Yes"/> <a href="../index"> Cancel </a> </p>
+    </form>
+     
+
+</center>
+{% endblock %}
