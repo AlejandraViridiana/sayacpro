@@ -433,10 +433,11 @@ Header section
 .header-section {
 	position: absolute;
 	width: 100%;
+	height: 17%;
 	left: 0;
 	top: 0;
 	padding-left: 53px;
-	background: rgba(0, 0, 0, 0.7);
+	background: #DD971A;
 	z-index: 999;
 }
 
@@ -471,7 +472,7 @@ Header section
 
 .main-menu li a:hover,
 .main-menu li a.active {
-	color: #f43f00;
+	color: #000000;
 }
 
 .main-menu li:hover>.sub-menu {
@@ -812,7 +813,7 @@ Footer section
 
 .footer-section {
 	padding: 100px 0 0;
-	background: #22242b;
+	background: #024731;
 }
 
 .footer-section p {
