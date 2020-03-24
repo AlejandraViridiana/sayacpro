@@ -3,7 +3,7 @@
 {% block content %}
  
 <center>
-    <h2> Eliminar Articulo</h2>
+    <h2> DELETE Article </h2>
 
     <form action="." method="POST">{% csrf_token %}
     <h3> ¿ Quieres eliminar del sistema el Article de nombre: {{object.titleArticle}}  del autor  {{object.userArticle.nameUser}} ? </h1>
