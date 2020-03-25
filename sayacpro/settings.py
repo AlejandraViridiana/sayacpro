@@ -38,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'articleSayac',
-    'userSayac',
-    'documentsSayac',
+    'userSayac',#pendiente
+    'documentsSayac',#pendiente
     'graphicsSayac', #pendiente
-    'projects', 
+    'projects', #pendiente
     'accounts', #login
     #notifications
     #SOAP 
