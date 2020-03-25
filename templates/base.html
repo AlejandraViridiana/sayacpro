@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   
-        <title> SAP UABC </title>
-        {% include 'navbar.html' %} 
-      </head>
 
-          <body style="background: rgb(20, 121, 46)">
-     <!--  <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>My First Bootstrap 4 Page</h1>
-        <p>Resize this responsive page to see the effect!</p>  
-      </div>  --> 
-       
-      
-      {% block content %}
-      {% endblock %} 
-      
-      {% include 'footer.html' %}
-      </body>
-      </html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Our Custom CSS -->
+  <style>
+    .bg-yellow{
+      background-color: #DD971A;
+    }
+    .bg-yellow-light{
+      background-color: #FEBE10;
+    }
+    .bg-yellow-hard{
+      background-color: #B08208;
+    }
+    a{
+      color:black;
+    }
+  </style>
 
 
-    </body>
+  <title> SAP UABC </title>
+  {% include 'navbar.html' %}
+</head>
+
+<body style="background: rgb(255, 255, 255)">
+
+
+  {% block content %}
+  {% endblock %}
+
+  {% include 'footer.html' %}
+</body>
+
 </html>
-
-
-
- <!--
+<!--
 
 -->
